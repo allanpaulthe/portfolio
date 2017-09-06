@@ -1,0 +1,126 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background: #070000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #070000, #4C0001, #070000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #070000, #4C0001, #070000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 6px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.myphoto img{
+  width: 0;
+  border-radius: 50%;
+  padding-top: 20px;
+  transition: 1s;
+  overflow:hidden;
+}
+.myphoto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.mainbody{
+  transition: 1s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2vmax;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.sidenav a:hover {
+    color: #ff7043;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .heading{ font-size: 10px;}
+}
+.heading{
+  font-family: 'Frijole', cursive;
+  text-transform: capitalize;
+  font-size: 4vmax;
+  display: flex;
+  justify-content: center;
+  font-weight:normal;
+  text-decoration: none;
+
+
+}
+
+.menu{
+  font-size: 3vmax;
+  cursor: pointer;
+}
+.under{
+  display: flex;
+  justify-content: center;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 2.2vmax;
+}
+hr{
+  border-top: 2px solid black;
+}
+.img{
+
+ float:left;
+   margin-right: 10px;
+   margin-bottom: 1px;
+   width: 400px;
+   border-radius:100px;
+   display: block;
+  overflow: hidden;
+}
+.mybody{
+
+  padding: 2vmax;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 2.3vmax;
+  height: auto;
+  width: auto;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+}
