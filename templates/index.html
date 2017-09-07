@@ -17,53 +17,71 @@
     <link rel="stylesheet" href="static/css/style.css">
 
   </head>
-  <body>
-    <div id="mySidenav" class="sidenav animated infinite pulse" >
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">HOME</a>
-          <a href="#">ABOUT</a>
-          <a href="#">PROJECTS</a>
-          <a href="#">HIRE ME</a>
-    </div>
-    <div class="myphoto animate flip" id="pic">
-      <img src="static/images/alan.jpg" alt=" " id="imgg">
-    </div>
-
-    <div id="main"  >
-
-          <div class="container " >
-                <div class="topic">
-                    <span class="menu animated infinite flash" onclick="openNav()"  onmouseover="openNav(),closepic()" >&#9776; </span>
-                      <div class="container">
-                        <a  class="heading animated infinite swing" onmouseover="loadpic()">alan paul</a>
-                        <p class="under animated infinite rubberBand">Software Developer</p>
-                      </div>
-
-
-                </div>
-              <div class="mainbody animated  tada" id="bodymain">
-
-
-                <div class="mybody"  onmouseover="closeNav();closepic()">
-                  <p id="aa" class="" >Hey, I’m an independent web & software developer from Kerala, India. I work primarily with React . js , ReactNative and Django.</p>
-                  <p>Have a look through some of my projects. Need help with an upcoming project or application? Learn a bit more about me and then consider hiring me.</p>
-
-                </div>
-                <div class="links" id="social" onmouseover="addclass()" onmouseout="removeclass()">
-                  <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
-              	      <li> <a href="#"><i class="fa fa-dropbox"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-github"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-twitter-square"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-stack-overflow"></i></a></li>
-              	      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-              	  </ul>
-                </div>
-              </div>
+   <body >
+         <div class="overlay_loader" id="overlay">
+          <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-    </div>
+           <div class="wlc">
+            <p class="animated rollIn welcome">hi there..<i class="fa fa-smile-o" aria-hidden="true"></i></p>
+            
+          </div>
+        </div>
+        
+      <div id="view">
+            <div id="mySidenav" class="sidenav animated infinite pulse" >
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">HOME</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">PROJECTS</a>
+                  <a href="#">HIRE ME</a>
+            </div>
+            <div class="myphoto animate flip" id="pic">
+              <img src="static/images/alan.jpg" alt=" " id="imgg">
+            </div>
+        
+            <div id="main"  >
+        
+                  <div class="container " >
+                        <div class="topic">
+                            <span class="menu animated infinite flash" onclick="openNav()"  onmouseover="openNav(),closepic()" >&#9776; </span>
+                              <div class="container">
+                                <a  class="heading animated infinite swing" onmouseover="loadpic()">alan paul</a>
+                                <p class="under animated infinite rubberBand">Software Developer</p>
+                              </div>
+        
+        
+                        </div>
+                      <div class="mainbody animated  tada" id="bodymain">
+        
+        
+                        <div class="mybody"  onmouseover="closeNav();closepic()">
+                          <p id="aa" class="" >Hey, I’m an independent web & software developer from Kerala, India. I work primarily with React . js , ReactNative and Django.</p>
+                          <p>Have a look through some of my projects. Need help with an upcoming project or application? Learn a bit more about me and then consider hiring me.</p>
+        
+                        </div>
+                        <div class="links" id="social" onmouseover="addclass()" onmouseout="removeclass()">
+                          <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                      	      <li> <a href="#"><i class="fa fa-dropbox"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-github"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-stack-overflow"></i></a></li>
+                      	      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                      	  </ul>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -97,6 +115,11 @@
           function removeclass(){
             document.getElementById("social").classList.remove("animated", "bounce")
           }
+          var overlay = document.getElementById("overlay");
+          window.setTimeout(function(){
+            overlay.style.display="none";
+            document.getElementById("view").style.display="block";
+          },3000)
     </script>
-  </body>
-  </html>
+</body>
+</html>
